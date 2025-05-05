@@ -30,6 +30,7 @@ cloudflared.exe tunnel login
 ```
 会打开浏览器让你登录cloudflare(前提是你的cloudflare已经托管你的域名了)
 登录完成后会在"C:\Users\用户名\.cloudflared\xxx.json"这个路径出现json文件
+![样式](IMG_20250506_020137.png)
 ## 4创建和配置隧道
 创建（取名随意 比如kuan-tunnel）
 cmd
