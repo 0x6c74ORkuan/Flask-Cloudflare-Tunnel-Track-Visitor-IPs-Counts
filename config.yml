@@ -1,0 +1,14 @@
+#Tunnel名称
+tunnel: kuan-tunnel
+
+#凭证文件路径,用于身份验证 cloudflare自动生成,不要修改内容
+credentials-file: C:\Users\用户名\.cloudflared\xxx.json
+
+ingress:
+  #1当访问"你的域名"时
+  - hostname: 你的域名
+    #把请求转发到你本地的flask（5000 端口）
+    service: http://localhost:5000
+
+  #2兜底规则,如果没有匹配上上面的域名,就返回404
+  - service: http_status:404
