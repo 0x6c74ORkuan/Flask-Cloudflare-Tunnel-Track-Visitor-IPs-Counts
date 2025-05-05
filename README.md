@@ -11,6 +11,7 @@ Cloudflare Tunnel(cloudflared)
     ↓
 程序输出IP和访问次数
 ## 1安装Flask
+cmd
 ```bash
 pip install flask
 ```
@@ -18,10 +19,12 @@ pip install flask
 ## 3登录CloudflareTunnel
 [Cloudflare下载exe]https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
 或运行
+cmd
 ```bash
 winget install --id Cloudflare.cloudflared
 ```
 然后
+cmd
 ```bash
 cloudflared.exe tunnel login
 ```
@@ -29,10 +32,12 @@ cloudflared.exe tunnel login
 登录完成后会在"C:\Users\用户名\.cloudflared\xxx.json"这个路径出现json文件
 ## 4创建和配置隧道
 创建（取名随意 比如kuan-tunnel）
+cmd
 ```bash
 cloudflared.exe tunnel create kuan-tunnel
 ```
 绑定玉米
+cmd
 ```bash
 cloudflared.exe tunnel route dns kuan-tunnel 你的域名
 ```
