@@ -1,7 +1,7 @@
 #Tunnel名称
 tunnel: kuan-tunnel
 
-#凭证文件路径,用于身份验证 cloudflare自动生成,不要修改内容
+#凭证文件路径,用于身份验证 cloudflare自动生成，如果你这个路径没有json文件请看README
 credentials-file: C:\Users\用户名\.cloudflared\xxx.json
 
 ingress:
